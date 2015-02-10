@@ -1,19 +1,90 @@
 
-
-.header ul{
-	list-style: none;
-	margin: 0;
-	padding: 0;
+*{
+	box-sizing:border-box;
 }
-.header ul li{
-	float:left;
-	padding:0 10px;	
+body{
+	font-family:microsoft Yahei;
 }
-.header ul li a{
-	display: block;
-	height: 50px;
-	line-height: 50px;
+.site_logo{
+	margin:10px;
 }
-.header_link dl dd, .header_link dl dt{
-	float:left;
+.header{
+	ul{
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		li{
+			float:left;
+			padding:0 10px;	
+			a{
+				display: block;
+				height: 50px;
+				line-height: 50px;
+			}
+		}
+	}
+	.header_link{
+		float:right;
+		padding:10px;
+		color:#b62024;
+		dl{
+			margin:0;
+		}
+	}
+	.header_link dl dd,
+	.header_link dl dt{
+		float: left;
+		padding:0;
+		margin:0;
+	}
+	.nav{
+		background:#fff;
+		margin:0 0 10px;
+		padding-top:10px;
+		border-top:5px solid #b62024;
+		a{
+			color:#b62024;
+		}
+		
+		li:hover{
+			background:#e0a1a3;
+			a{
+				text-decoration:none;
+				color:#fff;
+			}
+		}
+		li.active{
+			background:#b62024;
+			a{
+				color:#fff;
+			}			
+		}
+	}
+}
+.weixin_share{
+	img{
+		width:100%;
+	}
+	.weixin_share_pbtm15{
+		padding-bottom:15px;
+	}
+	.consult_online{
+		background: #b62024;
+		color:#fff;
+		width:100%;
+	}
+	.evaluate_online{
+		border:1px solid #b62024;
+		color:#b62024;
+		width:100%;
+	}
+	.evaluate_online, .consult_online{
+		padding:15px 0;
+	}
+}
+.index_col{
+	padding-top:30px;
+}
+.index_item{
+	border:1px solid #eee;
 }
